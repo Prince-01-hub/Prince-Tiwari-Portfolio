@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prince Tiwari | AI & GenAI Portfolio</title>
+<meta name="description" content="Prince Tiwari — B.Tech student focused on AI, Generative AI, Prompt Engineering, Python and DSA.">
+<style>
+:root{
+ --bg:#070b16;--surface:#0e1526;--surface2:#111b31;--text:#f5f7ff;--muted:#9eabc5;
+ --accent:#7dd3fc;--accent2:#a78bfa;--line:#24304a;--good:#86efac;
+}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:
+radial-gradient(circle at 85% 5%,rgba(125,211,252,.10),transparent 25rem),
+radial-gradient(circle at 10% 25%,rgba(167,139,250,.08),transparent 24rem),var(--bg);color:var(--text);line-height:1.65}
+a{color:inherit}.wrap{max-width:1080px;margin:auto;padding:0 22px 70px}
+nav{height:76px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;background:rgba(7,11,22,.78);backdrop-filter:blur(14px);z-index:10;border-bottom:1px solid rgba(36,48,74,.45)}
+.logo{font-weight:800;letter-spacing:-.03em}.logo span{color:var(--accent)}
+.navlinks a{color:var(--muted);text-decoration:none;margin-left:22px;font-size:.94rem}.navlinks a:hover{color:var(--text)}
+.hero{min-height:650px;display:flex;align-items:center;padding:80px 0 70px}
+.hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:60px;align-items:center}
+.eyebrow{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--line);background:rgba(14,21,38,.75);padding:7px 12px;border-radius:999px;color:var(--accent);font-size:.82rem;font-weight:700}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--good);box-shadow:0 0 14px var(--good)}
+h1{font-size:clamp(3rem,7vw,6rem);line-height:.98;letter-spacing:-.065em;margin:20px 0}
+.gradient{background:linear-gradient(100deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:1.13rem;color:var(--muted);max-width:690px}
+.actions{margin-top:28px;display:flex;gap:11px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 17px;border:1px solid var(--line);border-radius:11px;text-decoration:none;background:var(--surface);font-weight:700}
+.btn.primary{background:var(--text);color:#070b16;border-color:var(--text)}
+.hero-card{background:linear-gradient(145deg,rgba(17,27,49,.95),rgba(14,21,38,.75));border:1px solid var(--line);border-radius:24px;padding:25px;box-shadow:0 25px 70px rgba(0,0,0,.28)}
+.avatar{width:78px;height:78px;border-radius:20px;display:grid;place-items:center;font-size:1.65rem;font-weight:900;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#07111d;margin-bottom:20px}
+.card-title{font-size:1.2rem;font-weight:800}.small{color:var(--muted);font-size:.92rem}
+.statrow{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:22px}.stat{border:1px solid var(--line);padding:14px;border-radius:13px}.stat b{display:block;font-size:1.2rem}
+section{margin-top:26px;padding:35px;background:rgba(14,21,38,.72);border:1px solid var(--line);border-radius:22px}
+.kicker{color:var(--accent);font-size:.78rem;text-transform:uppercase;letter-spacing:.13em;font-weight:800}h2{font-size:2rem;letter-spacing:-.035em;margin:5px 0 15px}.section-intro{color:var(--muted);max-width:760px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}.panel{background:var(--surface2);border:1px solid var(--line);border-radius:16px;padding:20px}.panel h3{margin:0 0 7px}
+.chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:18px}.chip{border:1px solid var(--line);padding:7px 11px;border-radius:999px;color:#c9d2e7;background:#0c1425;font-size:.88rem}
+.project{position:relative;overflow:hidden}.project:before{content:"";position:absolute;inset:0 0 auto 0;height:2px;background:linear-gradient(90deg,var(--accent),var(--accent2))}
+.project-head{display:flex;justify-content:space-between;gap:20px;align-items:flex-start}.badge{font-size:.78rem;border:1px solid var(--line);border-radius:999px;padding:6px 9px;color:var(--accent);white-space:nowrap}
+.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:22px 0}.flow div{border:1px solid var(--line);border-radius:13px;padding:14px;background:#0b1323}.flow b{display:block;margin-bottom:4px}.flow span{color:var(--muted);font-size:.84rem}
+ul{color:var(--muted);padding-left:20px}.highlight{border-left:3px solid var(--accent);padding:14px 16px;background:#0b1323;border-radius:0 12px 12px 0;color:#cbd5e8}
+.timeline{display:grid;gap:12px}.timeline .item{display:grid;grid-template-columns:120px 1fr;gap:18px;border-bottom:1px solid var(--line);padding:12px 0}.timeline .item:last-child{border:0}.year{color:var(--accent);font-weight:800}
+.contact{display:grid;grid-template-columns:1.2fr .8fr;gap:20px;align-items:center}.contact-links{display:flex;flex-wrap:wrap;gap:10px}.contact-links a{padding:10px 13px;border:1px solid var(--line);border-radius:10px;text-decoration:none;color:var(--muted)}
+footer{text-align:center;color:var(--muted);padding:30px 0 0;font-size:.88rem}
+@media(max-width:800px){.hero-grid,.grid2,.contact{grid-template-columns:1fr}.hero{min-height:auto;padding:70px 0 45px}.navlinks{display:none}.flow{grid-template-columns:1fr 1fr}.project-head{display:block}.badge{display:inline-block;margin-top:10px}.timeline .item{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav>
+ <div class="logo">Prince<span>.</span></div>
+ <div class="navlinks">
+  <a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+ </div>
+</nav>
+
+<header class="hero">
+ <div class="hero-grid">
+  <div>
+   <div class="eyebrow"><span class="dot"></span> Open to learning & internship opportunities</div>
+   <h1>Building my path in <span class="gradient">AI & GenAI.</span></h1>
+   <p class="lead">I’m Prince Tiwari, a B.Tech student building a foundation in Artificial Intelligence, Generative AI and Prompt Engineering, while strengthening Python and DSA. I like turning real problems into structured, testable AI workflows.</p>
+   <div class="actions">
+    <a class="btn primary" href="#projects">Explore my projects</a>
+    <a class="btn" href="#contact">Get in touch</a>
+   </div>
+  </div>
+  <aside class="hero-card">
+   <div class="avatar">PT</div>
+   <div class="card-title">AI / GenAI Student</div>
+   <p class="small">Focused on practical learning, structured prompting and responsible AI output evaluation.</p>
+   <div class="statrow">
+    <div class="stat"><b>Java</b><span class="small">Comfortable</span></div>
+    <div class="stat"><b>GenAI</b><span class="small">Project work</span></div>
+    <div class="stat"><b>Python</b><span class="small">Learning</span></div>
+    <div class="stat"><b>DSA</b><span class="small">Learning</span></div>
+   </div>
+  </aside>
+ </div>
+</header>
+
+<section id="about">
+ <div class="kicker">01 — About</div><h2>Learning by solving problems.</h2>
+ <p class="section-intro">I’m currently developing the technical foundation needed for an AI engineering career. My approach is simple: understand the problem first, define the requirements clearly, build a structured solution, test the output and improve it instead of blindly trusting the first result.</p>
+ <div class="grid2" style="margin-top:20px">
+  <div class="panel"><h3>What I’m focused on</h3><p class="small">Artificial Intelligence · Generative AI · Prompt Engineering · Python · DSA</p></div>
+  <div class="panel"><h3>How I work</h3><p class="small">Problem definition · Audience awareness · Constraints · Verification · Iteration</p></div>
+ </div>
+</section>
+
+<section id="projects">
+ <div class="kicker">02 — Featured Project</div>
+ <div class="project">
+  <div class="project-head">
+   <div><h2>Medical Information Simplifier</h2><p class="section-intro">A Prompt Engineering / GenAI project designed to make complex medical articles easier for ordinary readers to understand while preserving the source material’s meaning, uncertainty and limitations.</p></div>
+   <span class="badge">Prompt Engineering • GenAI</span>
+  </div>
+
+  <div class="flow">
+   <div><b>01 · Input</b><span>Provided medical article + its included sources</span></div>
+   <div><b>02 · Analyze</b><span>Identify terminology, claims, gaps and conflicts</span></div>
+   <div><b>03 · Simplify</b><span>Rewrite difficult language without changing meaning</span></div>
+   <div><b>04 · Verify</b><span>Check against the original before output</span></div>
+  </div>
+
+  <div class="grid2">
+   <div class="panel"><h3>The problem</h3><p class="small">Medical articles can be difficult for non-medical readers because of technical terminology, complex statements and information that may be easy to misunderstand.</p></div>
+   <div class="panel"><h3>The objective</h3><p class="small">Create a controlled AI workflow that improves readability without inventing facts or silently changing what the source says.</p></div>
+  </div>
+
+  <div style="margin-top:16px" class="panel">
+   <h3>Key prompt-engineering decisions</h3>
+   <ul>
+    <li><b>Source-only rule:</b> the model is instructed not to introduce outside information.</li>
+    <li><b>Meaning preservation:</b> simplification must not change the original meaning.</li>
+    <li><b>Uncertainty preservation:</b> words such as “may” or “could” are not converted into certainty.</li>
+    <li><b>Hallucination control:</b> missing information is not filled with assumptions.</li>
+    <li><b>Medical safety:</b> new diagnoses, medicines, dosages or treatment recommendations are not invented.</li>
+    <li><b>Conflict handling:</b> conflicting statements are identified instead of being resolved by guessing.</li>
+    <li><b>Final verification:</b> the generated output is checked against the original article.</li>
+   </ul>
+  </div>
+
+  <div class="highlight" style="margin-top:16px">This project demonstrates how I use prompt design not only to generate text, but to define boundaries, handle edge cases and evaluate AI output.</div>
+
+  <div class="project" style="margin-top:22px">
+   <div class="project-head">
+    <div><h2>AI-Powered Real-Time Detection and Prevention of Voice Cloning Impersonation Attacks</h2><p class="section-intro">A Smart India Hackathon project focused on detecting possible voice-cloning impersonation during scam-style calls, with the goal of helping users identify suspicious synthetic or cloned voices.</p></div>
+    <span class="badge">SIH • AI • Cybersecurity</span>
+   </div>
+   <div class="flow">
+    <div><b>01 · Audio</b><span>Analyze short audio segments from a call</span></div>
+    <div><b>02 · Features</b><span>Process the voice signal for model analysis</span></div>
+    <div><b>03 · Risk</b><span>Estimate whether the segment appears suspicious</span></div>
+    <div><b>04 · Alert</b><span>Present a simple risk indication to the user</span></div>
+   </div>
+   <div class="grid2">
+    <div class="panel"><h3>Problem</h3><p class="small">Voice cloning can be used in impersonation scams, making it harder for people to trust what they hear during a call.</p></div>
+    <div class="panel"><h3>My role</h3><p class="small">Contributed on the Python/AI side of the prototype, including model experimentation, audio-data handling and evaluation of real versus synthetic voice samples.</p></div>
+   </div>
+   <div class="chips" style="margin-top:16px"><span class="chip">Python</span><span class="chip">PyTorch</span><span class="chip">Transformers</span><span class="chip">Audio Analysis</span><span class="chip">Cybersecurity</span><span class="chip">SIH 2026</span></div>
+  </div>
+
+  <div class="chips">
+   <span class="chip">Generative AI</span><span class="chip">Prompt Design</span><span class="chip">Constraint Engineering</span>
+   <span class="chip">Hallucination Control</span><span class="chip">Output Evaluation</span><span class="chip">Problem Decomposition</span>
+  </div>
+ </div>
+</section>
+
+<section id="skills">
+ <div class="kicker">03 — Skills</div><h2>My current toolkit.</h2>
+ <div class="grid2">
+  <div class="panel"><h3>Programming</h3><div class="chips"><span class="chip">Python</span><span class="chip">Java</span><span class="chip">DSA</span></div></div>
+  <div class="panel"><h3>AI / GenAI</h3><div class="chips"><span class="chip">Prompt Engineering</span><span class="chip">Generative AI</span><span class="chip">AI Output Evaluation</span></div></div>
+  <div class="panel"><h3>Data — Building Foundation</h3><div class="chips"><span class="chip">Pandas</span><span class="chip">SQL</span><span class="chip">Power BI</span></div></div>
+  <div class="panel"><h3>Problem Solving</h3><div class="chips"><span class="chip">Requirement Analysis</span><span class="chip">Constraints</span><span class="chip">Iteration</span><span class="chip">Documentation</span></div></div>
+ </div>
+</section>
+
+<section>
+ <div class="kicker">04 — Learning Journey</div><h2>Where I’m heading.</h2>
+ <div class="timeline">
+  <div class="item"><div class="year">Now</div><div><b>GenAI + Prompt Engineering</b><div class="small">Building practical projects and learning responsible AI output design.</div></div></div>
+  <div class="item"><div class="year">Next</div><div><b>Python + Data</b><div class="small">Strengthening Python and developing practical skills in Pandas, SQL, Power BI and Excel.</div></div></div>
+  <div class="item"><div class="year">Ongoing</div><div><b>DSA</b><div class="small">Building problem-solving fundamentals through Java and DSA practice.</div></div></div>
+  <div class="item"><div class="year">Goal</div><div><b>AI Engineering</b><div class="small">Move from guided learning to stronger real-world AI projects and internship experience.</div></div></div>
+ </div>
+</section>
+
+<section id="contact">
+ <div class="contact">
+  <div><div class="kicker">05 — Contact</div><h2>Let’s connect.</h2><p class="section-intro">I’m interested in beginner-friendly opportunities where I can apply my growing AI, GenAI, Prompt Engineering and data skills while learning from real projects.</p></div>
+  <div class="contact-links">
+   <a href="https://www.linkedin.com/in/prince-tiwari-4299a6389" target="_blank" rel="noopener">LinkedIn</a>
+   <a href="mailto:rrammilan280@gmail.com">Email</a>
+  </div>
+ </div>
+</section>
+
+<footer>© 2026 Prince Tiwari · AI / GenAI Student Portfolio</footer>
+</div>
+</body>
+</html>
